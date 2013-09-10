@@ -5,7 +5,7 @@
 
 The module is a complete rewrite of an earlier [pyquake3](http://misc.slowchop.com/misc/wiki/pyquake3) module that [Gerald Kaszuba](http://geraldkaszuba.com/) wrote.
 
-This pyquake3 module was developed for and tested with Urban Terror 4.1.1 running on ioUrTded v1.35 dedicated server.
+This pyquake3 module was developed for and tested with Urban Terror 4.1 / 4.2 running on dedicated server.
 
 
 # Features
