@@ -22,7 +22,7 @@ import socket
 import re
 
 
-class Player:
+class Player(object):
     """
     Player class
     """
@@ -44,7 +44,7 @@ class Player:
         return str(self)
 
 
-class PyQuake3:
+class PyQuake3(object):
     """
     PyQuake3 class
     """
