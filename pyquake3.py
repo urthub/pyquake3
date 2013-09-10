@@ -30,7 +30,7 @@ class Player:
         """
         create a new instance of Player
         """
-        self.num = int(num)
+        self.num = num
         self.name = name
         self.frags = frags
         self.ping = ping
@@ -199,8 +199,8 @@ class PyQuake3:
                 continue
             ply = ply.split(' ')
             try:
-                self.players.append(Player(ply[0], ply[3], ply[1], ply[2], ply[5]))
-            except IndexError:
+                self.players.append(Player(int(ply[0]), ply[3], int(ply[1]), int(ply[2]), ply[5]))
+            except (IndexError, ValueError):
                 continue
 
 
