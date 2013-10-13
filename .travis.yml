@@ -5,4 +5,10 @@ python:
 branches:
   only:
     - master
-script: python tests.py
+install:
+  - pip install pep8 --use-mirrors
+before_script:
+  - "pep8 --exclude=migrations --ignore=E225 src"
+script:
+  - python tests.py
+  - pytest tests.py
