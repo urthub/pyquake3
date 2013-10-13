@@ -1,5 +1,6 @@
 # pyquake3 - Python Quake 3 Library
 
+<a href='https://travis-ci.org/urthub/pyquake3'><img src='https://secure.travis-ci.org/urthub/pyquake3.png?branch=master'></a>
 
 **pyquake3** is a Python library to query and execute RCON commands on a Quake 3 server.
 
