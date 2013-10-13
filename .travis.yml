@@ -7,8 +7,10 @@ branches:
     - master
 install:
   - pip install pep8 --use-mirrors
+  - pip install flake8 --use-mirrors
 before_script:
-  - "pep8 --exclude=migrations --ignore=E225"
+  - pep8 --exclude=migrations --ignore=E501,E225 pyquake3
 script:
   - python tests.py
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then flake8 .; fi
   - pytest tests.py
