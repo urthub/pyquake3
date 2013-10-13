@@ -9,7 +9,7 @@ install:
   - pip install pep8 --use-mirrors
   - pip install flake8 --use-mirrors
 before_script:
-  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then pep8 --exclude=migrations --ignore=E501,E225 .; fi
+  - pep8 --exclude=migrations --ignore=E501,E225 .
 script:
   - python tests.py
-  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then flake8 .; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then flake8 --ignore=E501.; fi
