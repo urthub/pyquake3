@@ -57,8 +57,6 @@ class PyQuake3(object):
     players = None
     values = None
 
-
-
     def __init__(self, server, rcon_password=''):
         """
         create a new instance of PyQuake3
