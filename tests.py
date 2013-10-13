@@ -27,7 +27,7 @@ def test_player_ip_addr():
 
 
 def test_server_addr():
-    assert SERVER.get_address() == '127.0.0.1:27966'
+    assert SERVER.get_address() == '127.0.0.1:27960'
 
 
 def test_server_rcon():
