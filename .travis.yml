@@ -11,6 +11,5 @@ install:
 before_script:
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then pep8 --exclude=migrations --ignore=E501,E225 .; fi
 script:
-  - pytest tests.py
   - python tests.py
   - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then flake8 .; fi
