@@ -6,8 +6,8 @@ branches:
   only:
     - master
 install:
-  - pip install pep8 --use-mirrors
-  - pip install flake8 --use-mirrors
+  - pip install pytest pep8 --use-mirrors
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then pip install flake8 --use-mirrors; fi
 before_script:
   - pep8 --exclude=migrations --ignore=E302,E303,E225,E501 .
 script:
