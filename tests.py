@@ -3,7 +3,7 @@ from pyquake3 import PyQuake3
 
 
 GAMER = Player(3, 'Name', 5, 14, '1.1.1.1')
-SERVER = PyQuake3('127.0.0.1:27966', 'password')
+SERVER = PyQuake3('127.0.0.1:27960', 'password')
 
 
 def test_player_num():
